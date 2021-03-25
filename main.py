@@ -6,8 +6,6 @@ def sort_by_length(input_str):  # Сортировка имен файлов в 
 
 
 directory = r"Img"  # Путь к картинкам.
-#directory = r"Simple Case"
-#directory = r"Rezkosti Img"
 listdir = sorted(os.listdir(directory))
 listdir.sort(key=sort_by_length)
 for name in listdir:
